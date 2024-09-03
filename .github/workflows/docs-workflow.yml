@@ -79,11 +79,11 @@ jobs:
       - name: Checkout Current Branch
         uses: actions/checkout@v2
       - name: Download Codox Artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: codox
       - name: Download Klipse CLJS Cache Artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: klipse-cljs-cache
       - name: Extract Codox Artifact
@@ -114,7 +114,7 @@ jobs:
           ref: "gh-pages"
           path: "gh-pages"
       - name: Download MkDocs Artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: mkdocs
       - name: Extract MkDocs Artifact
